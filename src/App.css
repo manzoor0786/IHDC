@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
-}
+nav ul {
+    text-align: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    /* text-transform:uppercase; */
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  
+button {
+  border: none;
+  padding: 10px 80px;
+font-weight: bold;
+  position: relative;
+  background: rgb(220, 209, 209);
+  color: #119089;
+  text-transform: uppercase;
+  border: 3px  #919189;
+  cursor: pointer;
+  transition: all 0.7s;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-top: 20px;
+  margin-left: 173px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+#h{
+  color: aqua;
+}
+.wrapper{
+
+  max-width: 430px;
+  /* width: 100%; */
+  background: #fff;
+  padding: 60px;
+  padding-top: 0px;
+  border-radius: 6px;
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
+}
+.wrapper h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.wrapper h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  
+}
+/* .wrapper form{
+  margin-top: 10px;
+} */
+.wrapper form .input-box{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input-box input{
+  height: 80%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+form .policy{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+
+  cursor: pointer;
+}
+#image{
+  width: 60%;
+  border-radius: 5px;
+  border-color: #119089;
+}
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  width: 40%;
+ 
 }
 
-.App-link {
-  color: #61dafb;
-}
+.float-child {
+  width: 80%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 15%;
+ 
+
+}  
+.container{
+  display: flex;
+  margin-bottom: 40px;
+
+}
+.btn{
+  background-color: #41f4df;
 }
